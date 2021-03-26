@@ -26,8 +26,8 @@ public class ArrayList {
             throw new ArrayIndexOutOfBoundsException();
         }
         this.length++;
-        for(int i=index; i<length; i++){
-            this.arr[i+1]= arr[i];
+        for(int i=length; i>index; i--){
+            this.arr[i]= arr[i-1];
         }
         arr[index]= element;
 
@@ -41,10 +41,20 @@ public class ArrayList {
     }
 
     public void update(int element, int index){
-        if(index<0 || index>length){
+        if(index<0 || index>=length){
             throw new ArrayIndexOutOfBoundsException();
         }
         this.arr[index]= element;
+    }
+
+    public void delete(int index){
+        if(index<0 || index>=this.length){
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        this.length--;
+        for(int i=index; i<length; i++){
+            this.arr[i]= this.arr[i+1];
+        }
     }
 
 
