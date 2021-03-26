@@ -4,7 +4,7 @@
 
 Create a list data structure with following functions:
 
-1. Retrieve element at an index: 
+1. Retrieve element at an index: Time complexity should be O(n).
 2. Insert element at an index: 
 3. Update element at an index: 
 4. Delete element at an index: 
