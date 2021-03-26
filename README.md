@@ -8,8 +8,16 @@ Create a list data structure with following functions:
 2. Insert element at an index: 
 3. Update element at an index: 
 4. Delete element at an index: 
-5. length of the list: 
+5. size of the list: 
 6. check to see if list is empty: 
+
+Make sure that this is a dynamic list and size adjusts automatically.
+
+Make sure all index operations throws ArrayIndexOutOfBoundsException for invalid index.
+
+**Assumption**:
+
+List is of integer type.
 
 
 
