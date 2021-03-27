@@ -19,5 +19,8 @@ Make sure all index operations throws ArrayIndexOutOfBoundsException for invalid
 
 List is of integer type.
 
+**Testing**
+
+Spock framework with Groovy is used for unit testing.
 
 
