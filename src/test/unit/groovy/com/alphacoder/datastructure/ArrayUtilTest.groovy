@@ -293,9 +293,27 @@ class ArrayUtilTest extends Specification{
         arr.delete(1)
 
         then:
-        arr.size()== 2
+        arr.size()== 1
 
         and:
         arr.get(0)== 5
+    }
+
+    def 'Test ArrayList | check automatic increment of array'(){
+        given:
+        def arr= new ArrayList();
+
+        when:
+        for(int i=0; i<15;i++){
+            arr.insert(i,i);
+        }
+
+        arr.insert(16, 15)
+
+        then:
+        arr.size()== 16
+        and:
+        arr.get(15)== 16
+
     }
 }
