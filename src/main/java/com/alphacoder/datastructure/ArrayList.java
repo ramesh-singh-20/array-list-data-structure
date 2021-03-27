@@ -39,7 +39,7 @@ public class ArrayList {
     }
 
     public int get(int index) {
-        if (index < 0 || index > length) {
+        if (index < 0 || index >= length) {
             throw new ArrayIndexOutOfBoundsException();
         }
         return this.arr[index];
